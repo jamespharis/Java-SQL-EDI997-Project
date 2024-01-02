@@ -37,14 +37,14 @@ public class SQL_Pathway {
 			updateStatement = connection.createStatement(); // step 6
 			
 			
-			// Create & Execute a SELECT SQL statement.
-			//String selectSql ="Select key204rrn, GS01, GS06, ST01, ST02, E997Sent from AdventureWorks2019.dbo.EDIHeader where E997Sent <> 'Y'";
+			// Create & Execute a SELECT SQL statement.;
 			String selectSql ="Select key204rrn, GS01, GS06, ST01, ST02, E997Sent from EDIHeader where E997Sent <> 'Y'";
 			resultSet = statement.executeQuery(selectSql);
 		
 			// Print results from select statement
 			while(resultSet.next()) {
 			
+				// Print our values for key204rrn, GS01, GS06, ST01, ST02, & E997Sent
 				System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2) + " " + resultSet.getString(3) 
 				+ " " + resultSet.getString(4)  + " " + resultSet.getString(5) + " " + resultSet.getString(6));
 				keyrrn = resultSet.getInt("key204rrn"); // can access by column name or number
