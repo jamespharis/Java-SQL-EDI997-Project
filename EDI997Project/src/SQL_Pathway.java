@@ -88,22 +88,3 @@ public class SQL_Pathway {
         }
 	}
 }
-		
-//		try (Connection connection = DriverManager.getConnection(connectionUrl);
-//                Statement statement = connection.createStatement();) {
-//
-//            // Create and execute a SELECT SQL statement.
-//            String selectSql = "SELECT TOP 10 BusinessEntityID, Title, FirstName, LastName, ModifiedDate from Person.Person";
-//            resultSet = statement.executeQuery(selectSql);
-//
-//            // Print results from select statement
-//            while (resultSet.next()) {
-//
-//                System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2) + " " + resultSet.getString(3) + " " + resultSet.getString(4) 
-//                + " " + resultSet.getDate(5));
-//                
-//            }
-//        }
-//        catch (SQLException e) {
-//            e.printStackTrace();
-//	}
