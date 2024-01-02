@@ -1,5 +1,3 @@
-
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,6 +6,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+//STEP 1 - READ JSON FILE TO FIND OUTPUT LOCATION
 public class JSONhelper {
 
 	private String dest;
