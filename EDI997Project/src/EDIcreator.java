@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.Writer;
 
+// STEP 5 - FILE CREATION
 public class EDIcreator {
 
 	private String dest = null;
